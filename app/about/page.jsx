@@ -2,7 +2,8 @@ import React from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Image from "next/image";
-import CardImg1 from "../../public/images/Foto-diri-jpg Cropped.jpg";
+import CardImg1 from "../../public/images/Foto-diri-jpg-Cropped.jpg";
+import CardImg2 from "../../public/images/Dota-2-Background.jpg";
 
 export default function AboutPage() {
   return (
@@ -13,6 +14,9 @@ export default function AboutPage() {
           <div>
             <div className="profile-picture-ring">
               <Image className="profile-picture" src={CardImg1.src}></Image>
+            </div>
+            <div className="profile-picture-ring">
+              <Image className="profile-picture" src={CardImg2.src}></Image>
             </div>
           </div>
           <div className="about-title-container">
