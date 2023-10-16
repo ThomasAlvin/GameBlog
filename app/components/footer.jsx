@@ -7,8 +7,8 @@ export default function Footer() {
     <>
       <div className="background-secondary footer-container">
         <div className=" p-80 d-flex gap-80">
-          <div className="row w-100">
-            <div className="footer-1 col-md-3 px-15">
+          <div className="row">
+            <div className=" col-md-3 px-15">
               <Flex
                 alignItems={"center"}
                 color={"black"}
