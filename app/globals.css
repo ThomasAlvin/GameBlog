@@ -1,0 +1,333 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+html {
+  font-size: 10px;
+}
+:root {
+  --primary-color: #0030cc;
+  --secondary-color: #6b8eff;
+  --tersier-color: white;
+  --grey-color: #c4c4c4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  color: var(--primary-color);
+}
+::-webkit-scrollbar {
+  width: 14px;
+  height: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--grey-color);
+  width: 10px;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+.homepage-card-container {
+  padding-top: 40px;
+  justify-content: space-evenly;
+}
+.homepage-card1 {
+  width: 300px !important;
+}
+.loading-placeholder {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+.mx-100 {
+  margin-right: 100px !important;
+  margin-left: 100px !important;
+}
+.homepage-title {
+  padding-top: 30px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  font-size: 3.2rem;
+}
+.homepage-title-desc {
+  font-weight: 500;
+  color: var(--grey-color);
+  font-size: 1.6rem;
+}
+.homepage-title-descspan {
+  font-weight: 700;
+  color: var(--secondary-color);
+  font-size: 1.6rem;
+}
+.homepage-background-header {
+  width: 100vw;
+  height: 300px;
+  z-index: -1;
+  filter: brightness(0.6);
+  position: absolute;
+  background-image: url("../public//images/Gaming-Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* or background-size: contain; */
+  background-position: center center;
+}
+
+.mr-100 {
+  margin-right: 100px;
+}
+.pt-80 {
+  padding-top: 80px;
+}
+.font-md {
+  font-size: 2rem;
+}
+.font-sm {
+  font-size: 1.4rem !important;
+}
+.height-80 {
+  height: 80px;
+}
+.background-primary {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+.background-secondary {
+  color: white !important;
+  background-color: var(--secondary-color);
+}
+.primary-font {
+  color: var(--primary-color);
+}
+.footer-container {
+  width: 100%;
+}
+.footer-1 {
+  width: 400px;
+}
+.p-80 {
+  padding: 80px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.gap-80 {
+  gap: 80px;
+}
+.footer-link {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.link-hover {
+  color: rgb(216, 210, 210);
+}
+.link-hover:hover {
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+}
+.fs-1rem {
+  font-size: 1.4rem;
+}
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.gap-10 {
+  gap: 10px !important;
+}
+.px-15 {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+.pos-sticky {
+  top: 0;
+  z-index: 1;
+  position: sticky !important;
+}
+.profile-picture {
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  border: 4px solid var(--primary-color);
+}
+.profile-picture-ring {
+  padding: 3px;
+  border-radius: 100px;
+  border: 4px solid var(--secondary-color);
+}
+.about-title {
+  padding-top: 30px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  font-size: 3.2rem;
+}
+.about-title-desc {
+  font-weight: 600;
+  width: 450px;
+  color: #919191;
+  font-size: 1.6rem;
+}
+.about-content-title {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.about-content-desc {
+  font-size: 1.6rem;
+  color: #919191;
+}
+.about-content-section {
+  width: 600px;
+}
+.about-heading {
+  gap: 20px;
+}
+.about-content-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+.blog-content-container {
+  padding-top: 90px;
+}
+.blog-content-heading {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.blog-content-heading2 {
+  color: #c6c6c6;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.blog-content-body {
+  color: #919191;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.mx-250 {
+  margin-left: 250px;
+  margin-right: 250px;
+}
+.blog-container {
+  margin-bottom: 100px;
+}
+@media (max-width: 992px) {
+  .about-title-desc {
+    font-weight: 600;
+    color: #919191;
+    font-size: 1.4rem;
+    width: 300px;
+  }
+  .mx-100 {
+    margin-right: 40px !important;
+    margin-left: 40px !important;
+  }
+}
+@media (max-width: 576px) {
+  .mx-100 {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+  }
+  .homepage-title {
+    padding-top: 30px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-size: 2.4rem;
+  }
+  .about-heading {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .homepage-title-desc {
+    font-weight: 500;
+    color: var(--grey-color);
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+  .homepage-title-descspan {
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+  }
+  .homepage-container {
+    gap: 20px;
+  }
+  .homepage-background-header {
+    width: 100vw;
+    height: 400px;
+    z-index: -1;
+    filter: brightness(0.6);
+    position: absolute;
+    background-image: url("../public//images/Gaming-Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* or background-size: contain; */
+    background-position: center center;
+  }
+  .blog-content-heading2 {
+    color: #c6c6c6;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .footer-link {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .about-title {
+    padding-top: 30px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-size: 2.4rem;
+  }
+  .about-title-desc {
+    font-weight: 600;
+    color: #919191;
+    font-size: 1.4rem;
+  }
+  .profile-picture {
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    border: 4px solid var(--primary-color);
+  }
+  .profile-picture-ring {
+    padding: 3px;
+    border-radius: 100px;
+    border: 4px solid var(--secondary-color);
+  }
+  .about-content-section {
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
