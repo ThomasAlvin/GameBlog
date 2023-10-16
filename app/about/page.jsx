@@ -12,7 +12,7 @@ export default function AboutPage() {
         <div className="d-flex align-items-center justify-content-center about-heading px-10">
           <div>
             <div className="profile-picture-ring">
-              <Image className="profile-picture" src={CardImg1}></Image>
+              <Image className="profile-picture" src={CardImg1.src}></Image>
             </div>
           </div>
           <div className="about-title-container">
