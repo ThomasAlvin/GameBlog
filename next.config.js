@@ -3,7 +3,7 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/:id",
+        source: "/",
         destination: "/", // Matched parameters can be used in the destination
         permanent: true,
       },
