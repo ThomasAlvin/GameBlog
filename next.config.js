@@ -3,9 +3,9 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/",
+        source: "/:id",
         destination: "/", // Matched parameters can be used in the destination
-        permanent: true,
+        permanent: false,
       },
     ];
   },
