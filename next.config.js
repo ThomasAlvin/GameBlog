@@ -4,7 +4,7 @@ const nextConfig = {
     return [
       {
         source: "/:id",
-        destination: "/:id", // Matched parameters can be used in the destination
+        destination: "/", // Matched parameters can be used in the destination
         permanent: true,
       },
     ];
